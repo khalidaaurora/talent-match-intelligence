@@ -1,0 +1,10 @@
+tv_name,tgv_name,direction,is_numeric
+SEA,Social,higher,True
+Papi_X,Social,higher,True
+QDD,Discipline,higher,True
+Papi_T,Discipline,higher,True
+IDS,Decision,higher,True
+Papi_P,Leadership,higher,True
+Papi_F,Followership,higher,True
+pauli,Cognitive,higher,True
+faxtor,Cognitive,higher,True
