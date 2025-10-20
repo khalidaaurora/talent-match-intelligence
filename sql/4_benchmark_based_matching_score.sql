@@ -87,7 +87,7 @@ final_match AS (
 -- Step 7: Final output
 -- Combine all results and show employee details with each TV/TGV and final scores
 SELECT
-  tm.employee_id AS candidate_id,
+  tm.employee_id,
   tm.directorate_name,
   tm.position_name,
   tm.grade_name,
@@ -104,4 +104,5 @@ JOIN tgv_match tg
   AND tm.tgv_name = tg.tgv_name
 JOIN final_match fm
   ON tm.employee_id = fm.employee_id
+
 ORDER BY fm.final_match_rate DESC, tm.employee_id, tm.tgv_name, tm.tv_name;
