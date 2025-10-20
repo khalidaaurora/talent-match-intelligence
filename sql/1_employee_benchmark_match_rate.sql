@@ -64,7 +64,7 @@ final_match AS (
 -- Show all key columns: candidate info, TV-level comparison, TGV averages,
 -- and their final overall match rate, sorted by the best fit first
 SELECT
-  tm.employee_id AS candidate_id,
+  tm.employee_id,
   tm.directorate,
   tm.role,
   tm.grade,
@@ -81,4 +81,5 @@ JOIN tgv_match tg
   AND tm.tgv_name = tg.tgv_name
 JOIN final_match fm 
   ON tm.employee_id = fm.employee_id
+
 ORDER BY fm.final_match_rate DESC, tm.employee_id, tm.tgv_name, tm.tv_name;
