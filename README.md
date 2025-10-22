@@ -45,11 +45,11 @@ SQL scripts implement benchmark median calculation, match rate computation, and 
 Interactive dashboard built with Streamlit to visualize:
 - Candidate-to-benchmark match rates
 - TGV-level and overall fit scores
-- Filtering by role, level, or directorate
+- Filtering by role and level
 
 📂 **Folder**: `app/`
 
 ### Run Locally
 ```bash
-pip install -r app/requirements.txt
-streamlit run app/app.py
+pip install -r talent-match-app/requirements.txt
+streamlit run talent-match-app/app.py
