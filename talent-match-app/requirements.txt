@@ -1,0 +1,7 @@
+streamlit
+psycopg2-binary
+pandas
+plotly
+openai==0.28
+python-dotenv
+supabase
